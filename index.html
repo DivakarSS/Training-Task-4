@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task-3</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <table>
+            <thead>
+                <form>
+                    <tr>
+                        <th>Name:</th>
+                        <td>
+                            <input type="text" onfocus="this.value=''" placeholder="Name" name="name" id="name" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Age:</th>
+                        <td>
+                            <input type="number" onfocus="this.value=''" placeholder="Age" min="1" max="99" name="age" id="age" required />
+                        </td>
+                    </tr>
+                </form>
+            </thead>
+        </table>
+
+        <br />
+        <table>
+            <tr>
+                <input type="submit" name="button" id="btn" value="save" onclick="AddRow()" />
+            </tr>
+        </table>
+
+        <br /><br />
+
+        <table border="1" id="show">
+            <thead>
+                <tr id="table-header-place-holder">
+                    <th>Name</th>
+
+                    <th>Age</th>
+
+                    
+                </tr>
+            </thead>
+        </table>
+    </center>
+
+    <script src="myScript.js"></script>
+         
+</body>
+
+</html>
+
+
